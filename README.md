@@ -45,7 +45,13 @@ Step2. zm_dwa_local_planner add to move_base.launch file.
   </node>
 ```
 
------
+------
+
+DWA Local Planner and ZM DWA Local Planner Path Result.
+
+[!image](https://github.com/qaz9517532846/zm_dwa_local_planner/blob/main/image/result.png)
+
+------
 
 # Reference
 
