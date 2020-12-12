@@ -245,7 +245,8 @@ namespace zm_dwa_local_planner
                     iter_x[0] = p_x;
                     iter_x[1] = p_y;
                     iter_x[2] = 0.0;
-                    iter_x[3] = p_th;
+                    iter_x[3] = 0.0;
+                    //iter_x[3] = p_th;
                     iter_x[4] = t->cost_;
                     ++iter_x;
                 }
