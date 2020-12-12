@@ -38,10 +38,10 @@ Step2. zm_dwa_local_planner add to move_base.launch file.
     <rosparam file="$(find zm_robot_navigation)/param/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find zm_robot_navigation)/param/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find zm_robot_navigation)/param/move_base_params.yaml" command="load" />
-    <rosparam file="$(find zm_robot_navigation)/param/dwa_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find zm_dwa_local_planner)/param/zm_dwa_local_planner_params.yaml" command="load" />
     <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
     <remap from="odom" to="$(arg odom_topic)"/>
-    <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+    <param name="move_base/zmDWALocalPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
   </node>
 ```
 
