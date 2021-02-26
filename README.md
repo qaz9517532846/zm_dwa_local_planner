@@ -1,16 +1,14 @@
 # zm_dwa_local_planner
 
-zm_dwa_local_planner is revised DWA local planner algorithm under ROS using DWA for AGV using mecanum wheel motion.
+- zm_dwa_local_planner is revised DWA local planner algorithm under ROS using DWA for AGV using mecanum wheel motion.
 
-Only x-y linear moving to avoiding obstacles when AGV detect to have obstacles.
+- Only x-y linear moving to avoiding obstacles when AGV detect to have obstacles.
 
-Software : Robot Operating System.
+- Software : Robot Operating System.
 
-OS: Linux Ubuntu.
+- OS: Linux Ubuntu.
 
-------
-
-Step1. Download zm_dwa_local_planner github link.
+- Step1. Download zm_dwa_local_planner github link.
 
 ``` bash
 $ cd <catkin_ws>/src
@@ -28,7 +26,7 @@ $ cd ..
 $ catkin_make
 ```
 
-Step2. zm_dwa_local_planner add to move_base.launch file.
+- Step2. zm_dwa_local_planner add to move_base.launch file.
 
 ``` bash
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
@@ -45,13 +43,9 @@ Step2. zm_dwa_local_planner add to move_base.launch file.
   </node>
 ```
 
-------
-
-DWA Local Planner and ZM DWA Local Planner Path Result.
+- DWA Local Planner and ZM DWA Local Planner Path Result.
 
 ![image](https://github.com/qaz9517532846/zm_dwa_local_planner/blob/main/image/result.png)
-
-------
 
 # Reference
 
